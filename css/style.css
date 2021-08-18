@@ -60,8 +60,9 @@ main{
 .nav a{
     color: ivory;
     text-decoration: none;
-    font-weight: bold;
+    /* font-weight: bold; */
     padding-right: 2em;
+    font-size: 0.8rem;
 }
 .nav input{
     padding: 7px 8px;
@@ -126,7 +127,7 @@ main{
 .form form{
     display: table;
 }
-.form input,textarea{
+.form input[type=text], input[type=email], input[type="tel"], textarea{
     background: #fbfbfb;
     box-sizing: border-box;
     border: 1px solid #f1f1f1;
@@ -136,6 +137,12 @@ main{
     width: 100%;
     font-family: sans-serif;
     font-size: 16px;
+}
+.form input[type=submit]{
+    border-radius: 5px;
+    padding: 9.5px;
+    background-color: dodgerblue;
+    color: white;
 }
 .map{
     width: 50%;
@@ -164,6 +171,14 @@ main{
 .stats .stats-text p{
     font-size: 0.7rem;
 }
+.address{
+    grid-column: 1/4;
+    margin: 10px auto;
+    width: 80%;
+}
+.address li{
+    list-style: none;
+}
 .divider{
     grid-column: 1/4;
     border: 1px solid silver;
@@ -188,6 +203,7 @@ main{
 .footer .col a{
     color: gray;
     text-decoration: none;
+    font-size: 0.9rem;
 }
 .footer .col a:hover{
     color: #666;
