@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    border: 0;
+}
+body{
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+.container{
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:2px;
+    margin: 0 auto;
+}
+main{
+    grid-column: 1/4;
+    background-image: linear-gradient(to right, #001123, #001123, #005390, #001123, #001123);
+    /* background-image: linear-gradient(to right, blue, purple); */
+}
+/* header styling for the navigation and logo section  */
+.header{
+    grid-column: 1/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    width: 80%;
+    /* border: 1px solid #000; */
+}
+.header .logo{
+    /* border: 1px solid #000; */
+    width: 20%;
+}
+.header .nav{
+    background-color: #ff0000;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav > ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    width: 60%;
+}
+.nav li{
+    list-style: none;
+    align-self: center;
+    border-right: 1px solid white;
+}
+.nav a{
+    color: ivory;
+    text-decoration: none;
+    font-weight: bold;
+    padding-right: 2em;
+}
+.nav input{
+    padding: 7px 8px;
+    border-radius: 5px;
+    margin: 0 3px;
+}
+/* .jumbotron styling and adjustments for the slider  */
+.jumbotron{
+    /* border: 1px solid teal; */
+    grid-column: 1/4;
+    margin: 0 auto;
+    width: 80%;
+    
+}
+.slider-images{
+    min-height: 370px;
+    background: #000;
+}
+.brands{
+    /* border:1px solid gold; */
+    grid-column: 1/4;
+    margin:0 auto;
+    max-width: 80%;
+}
+.brands .slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0;
+}
+.brands .slider > img{
+    max-width: 8%;
+    /* border: 1px solid #000; */
+    margin: 0 5px;
+}
+.heading{
+    background:silver;
+}
+.heading h1{
+    padding: 15px 0;
+    font-family: "Antonio", sans-serif;
+    text-align: center;
+    font-weight: light;
+    text-transform: uppercase;
+    letter-spacing: 1pt;
+    line-height: normal;
+    color: cornsilk;
+}
+.stats{
+    /* border: 1px solid goldenrod; */
+    grid-column: 1/4;
+    height: 150px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right,#fbb201, #fcd602, #fbb201);
+    /* border: 1px solid #000; */
+    width: 80%;
+}
+.stats .stats-text{
+    width: 25%;
+    text-align: center;
+    text-transform: uppercase;
+    /* border: 1px solid #000; */
+}
+.stats .stats-text h2{
+    font-size: 2em;
+}
+.divider{
+    grid-column: 1/4;
+    border: 1px solid silver;
+    width: 80%;
+    margin: 30px auto;
+}
+.footer{
+    /* border: 1px solid indianred; */
+    grid-column: 1/4;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 10px auto;
+}
+.footer .col{
+    width: 20%;
+
+}
+.footer .col li{
+    list-style: none;
+}
+.footer .col a{
+    color: gray;
+    text-decoration: none;
+}
+.footer .col a:hover{
+    color: #666;
+}
+.footer .social{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    /* border: 1px solid #000; */
+}
+.social li{
+    /* border: 1px solid #999; */
+    box-shadow: 1px 1px rgba(0,0,0,0.2);
+    width: 33.3%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+.social i{
+    margin: 0 auto;
+}
+
+/* the final footer on the page  */
+footer{
+    grid-column: 1/4;
+    background: red;
+    color: cornsilk;
+    padding: 50px 10px;
+    width: 80%;
+    margin: 10px auto;
+}
+footer .end{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left{
+    width: 60%;
+}
+.right{
+}
+.end .left ul{
+    display: flex;
+    justify-content: space-between;
+}
+.end .left li{
+    list-style: none;
+}
+.end a{
+    color: seashell;
+    text-decoration: none;
+}
