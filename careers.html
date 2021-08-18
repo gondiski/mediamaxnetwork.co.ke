@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/jquery.bbslider.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body class="container">
     <main>
@@ -44,10 +45,10 @@
         <div class="jumbotron">
             <div class="slider">
                 <div class="slider-images" style="height:500px;">
-                    <img src="./img/homepage_1.png" alt="">
-                    <img src="./img/homepage_2.png" alt="">
-                    <img src="./img/homepage_3.png" alt="">
-                    <img src="./img/homepage_4.png" alt="">
+                    <img src="./img/homepage_1_resized.png" alt="">
+                    <img src="./img/homepage_2_resized.png" alt="">
+                    <img src="./img/homepage_3_resized.png" alt="">
+                    <img src="./img/homepage_4_resized.png" alt="">
                     <!-- <img src="" alt=""> -->
                 </div>
             </div>
@@ -58,17 +59,16 @@
             <h1>Our Brands</h1>
         </div>
         <div class="slider">
-            <img src="./img/logos/k24-new-logo.png" alt="">
-            <img src="./img/logos/KAMEME TV LOGO-01.png" alt="">
-            <img src="./img/logos/Mayian FM logo.png" alt="">
-            <img src="./img/logos/MEDIAMAX DIGITAL LOGO-01.png" alt="">
-            <img src="./img/logos/MERUFM_LOGO.png" alt="">
-            <img src="./img/logos/MILELE-logo.png" alt="">
-            <img src="./img/logos/MSENANGU LOGO with no slogan and_without background-01.png" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+            <img src="./img/logos2/k24.png" alt="">
+            <img src="./img/logos2/kameme tv.png" alt="">
+            <img src="./img/logos2/Kamemefm.png" alt="">
+            <img src="./img/logos2/mayian fm.png" alt="">
+            <img src="./img/logos2/mediamaxx digital.png" alt="">
+            <img src="./img/logos2/meru fm.png" alt="">
+            <img src="./img/logos2/milelefm.png" alt="">
+            <img src="./img/logos2/msenangu.png" alt="">
+            <img src="./img/logos2/pd.png" alt="">
+
         </div>
     </div>
     <div class="stats">
@@ -120,12 +120,12 @@
         </div>
         <div class="col">
             <h3>Connect with us</h3>
-            <ul>
-                <li><a href="https://facebook.com/mediamax"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="https://facebook.com/mediamax"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="https://facebook.com/mediamax"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="https://facebook.com/mediamax"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="https://facebook.com/mediamax"><i class="fa fa-facebook"></i></a></li>
+            <ul class="social">
+                <li><a href="https://www.facebook.com/mediamaxdigital" target="_blank"><i data-feather="facebook"></i></a></li>
+                <li><a href="https://twitter.com/k24tv" target="_blank"><i data-feather="twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/mediamaxdigital/" target="_blank"><i data-feather="instagram"></i></a></li>
+                <li><a href="https://www.youtube.com/user/K24TV" target="_blank"><i data-feather="youtube"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/mediamax-network-ltd./" target="_blank"><i data-feather="linkedin"></i></a></li>
             </ul>
         </div>
     </div>
@@ -153,6 +153,7 @@
 <script src="./js/jquery-3.2.1.min.js"></script>
 <script src="./js/jquery.bbslider.js"></script>
 <script src="./js/main.js"></script>
+
 <script>
     $('.slider-images').bbslider({
         auto:  true,
@@ -160,4 +161,17 @@
           loop:  true
       });
 </script>
+<script>
+    feather.replace();
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-48242077-18"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-48242077-18');
+</script>
+
 </html>

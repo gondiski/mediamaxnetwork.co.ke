@@ -211,3 +211,21 @@ footer .end{
     color: seashell;
     text-decoration: none;
 }
+/* end of the last footer  */
+/* ================================= */
+/* Media queries and page resizing  */
+/* ================================= */
+@media only screen and (max-width: 768px){
+    .footer{
+        /* border: 1px solid indianred; */
+        grid-column: 1/4;
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: 10px auto;
+        flex-wrap: wrap;
+    }
+    .footer .col{
+        width: 50%;
+    }
+}
