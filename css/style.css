@@ -96,6 +96,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     margin: 5px 0;
 }
 .brands .slider > img{
@@ -148,6 +149,16 @@ main{
 }
 .map{
     width: 50%;
+}
+/* styles affecting the about page  */
+.text{
+    margin: 10px 0;
+    width: 50%;
+    /* justify-self: start; */
+}
+.text p{
+    line-height: 16pt;
+    padding-bottom: 0.3rem;
 }
 .stats{
     /* border: 1px solid goldenrod; */
