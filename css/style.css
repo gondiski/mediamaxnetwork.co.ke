@@ -136,13 +136,15 @@ main{
     margin: 3px;
     width: 100%;
     font-family: sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
 }
-.form input[type=submit]{
+.form input[type=button]{
     border-radius: 5px;
     padding: 9.5px;
     background-color: dodgerblue;
     color: white;
+    font-size: 1rem;
+    width: 50%;
 }
 .map{
     width: 50%;
