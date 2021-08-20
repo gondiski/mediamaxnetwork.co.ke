@@ -225,7 +225,7 @@ main{
 .stats{
     /* border: 1px solid goldenrod; */
     grid-column: 1/4;
-    height: 150px;
+    min-height: 150px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -348,6 +348,9 @@ footer .end{
     .search{
         display: none;
     }
+    .stats{
+        flex-direction: column;
+    }
     .footer{
         /* border: 1px solid indianred; */
         grid-column: 1/4;
@@ -359,5 +362,11 @@ footer .end{
     }
     .footer .col{
         width: 50%;
+    }
+    footer .end{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
     }
 }
