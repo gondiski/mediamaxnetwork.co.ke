@@ -378,6 +378,11 @@ footer .end{
         flex-direction: column;
         align-items: center;
     }
+    footer .end > .left{
+        display: flex;
+        justify-content: center;
+        text-align: center; 
+    }
     .end .left ul{
         display: flex;
         flex-direction: column;
@@ -428,6 +433,11 @@ footer .end{
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    footer .end > .left{
+        display: flex;
+        justify-content: center;
+        text-align: center; 
     }
     .end .left ul a:hover{
         text-decoration: dotted;
