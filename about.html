@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mediamax Network</title>
     <link rel="stylesheet" href="./css/jquery.bbslider.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
     <script src="https://unpkg.com/feather-icons"></script>
@@ -17,7 +18,7 @@
                 <img src="./img/logos/Mediamax Network-01.png" alt="mediamax network logo" width="80%">
             </div>
             <div class="nav blank">
-                <ul>
+                <ul class="main_menu">
                     <li>
                         <a href="/">Home</a>
                     </li>
@@ -34,6 +35,24 @@
                         <a href="contact.html">Contact</a>
                     </li>
                 </ul>
+                <div class="hamburger">
+                    <button class="ham">
+                        <!-- X and menu icon SVGs from material icons https://material.io/resources/icons/ -->
+                        <span class="menuIcon material-icons">
+                          menu
+                        </span>
+                        <span class="xIcon material-icons">
+                          close
+                        </span>
+                      </button>
+                      <ul class="menu">
+                        <li><a class="menuLink" href="/">Home</a></li>
+                        <li><a class="menuLink" href="about.html">About</a></li>
+                        <li><a class="menuLink" href="brands.html">Our Brands</a></li>
+                        <li><a class="menuLink" href="careers.html">Careers</a></li>
+                        <li><a class="menuLink" href="contact.html">Contact</a></li>
+                      </ul>
+                </div>
                 <div class="search">
                     <form action="">
                         <input type="search" placeholder="Search">
