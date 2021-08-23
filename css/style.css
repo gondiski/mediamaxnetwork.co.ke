@@ -215,7 +215,7 @@ main{
 /* styles affecting the about page  */
 .text{
     margin: 10px 0;
-    width: 50%;
+    width: 100%;
     /* justify-self: start; */
 }
 .text p{
