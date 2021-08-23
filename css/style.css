@@ -183,7 +183,6 @@ main{
     display: flex;
     grid-gap: 1em;
     margin: 10px 0;
-    flex-wrap: wrap;
 }
 .form{
     width: 50%;
@@ -352,6 +351,9 @@ footer .end{
     }
     .search{
         display: none;
+    }
+    .contact_form{
+        flex-wrap: wrap;
     }
     .form, .map{
         width: 100%;
