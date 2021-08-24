@@ -193,6 +193,7 @@ main{
 }
 .form{
     width: 50%;
+    font-size: 0.7rem;
 }
 .form form{
     display: table;
@@ -238,6 +239,10 @@ main{
     font-family: "Antonio", sans-serif;
     margin-bottom: 1rem;
 }
+.text h1{
+    font-size: 1.2rem;
+    font-family: "Antonio",sans-serif;
+}
 .stats{
     /* border: 1px solid goldenrod; */
     grid-column: 1/4;
@@ -269,7 +274,9 @@ main{
 .address{
     grid-column: 1/4;
     margin: 10px auto;
-    width: 80%;
+    width: 60%;
+    font-size: 0.7rem;
+    padding: 0 5rem;
 }
 .address li{
     list-style: none;
@@ -315,16 +322,16 @@ main{
     /* border: 1px solid #000; */
 }
 .social li{
-    /* border: 1px solid #999; */
     box-shadow: 1px 1px rgba(0,0,0,0.2);
-    width: 33.3%;
-    padding: 10px 0;
+    /* width: 20%; */
+    padding: 10px;
     display: flex;
     justify-content: center;
-    font-size: 0.2rem;
 }
-.social i{
+.social a{
     margin: 0 auto;
+    padding: 2px;
+    font-size: 0.3rem;
 }
 
 /* the final footer on the page  */
