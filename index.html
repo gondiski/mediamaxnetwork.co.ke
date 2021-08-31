@@ -10,6 +10,13 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
     <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Place in the <head>, after the three links -->
+    <script type="text/javascript" charset="utf-8">
+        $(window).load(function() {
+        $('.flexslider').flexslider();
+        });
+    </script>
 </head>
 <body class="container">
     <main>
@@ -181,20 +188,7 @@
           loop:  true
       });
 </script>
-<!-- slider initialization  -->
-<script>
-    $('.carousel').bbslider({
-        controls:     false,
-        transition:   'fade',
-        carousel:     6,
-        carouselMove: 2,
-        auto: true,
-        /*controlsText:[
-            '<a class="prev control fa fa-angle-left" href="#"></a>',
-            '<a class="next control fa fa-angle-right" href="#"></a>'],*/
-        
-        });
-</script>
+
 <script>
     feather.replace();
 </script>
