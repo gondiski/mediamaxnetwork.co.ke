@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/jquery.bbslider.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
     <script src="https://unpkg.com/feather-icons"></script>
 </head>
@@ -59,13 +60,15 @@
             
         </div>
         <div class="jumbotron">
-            <div class="slider">
-                <div class="slider-images" style="height:500px;">
-                    <img src="./img/homepage_1_resized.png" alt="">
-                    <img src="./img/homepage_2_resized.png" alt="">
-                    <img src="./img/homepage_3_resized.png" alt="">
-                    <img src="./img/homepage_4_resized.png" alt="">
-                    <!-- <img src="" alt=""> -->
+            <div class="">
+                <div class="slider-images" id="intro" style="height:;">
+                    <div class="carousel">
+                        <img src="./img/homepage_1_resized.png" alt="" class="">
+                        <img src="./img/homepage_2_resized.png" alt="" class="">
+                        <img src="./img/homepage_3_resized.png" alt="" class="">
+                        <img src="./img/homepage_4_resized.png" alt="" class="">
+                    
+                    </div>
                 </div>
             </div>
         </div>
@@ -165,29 +168,53 @@
         </div>
     </footer>
     <div class="brands">
-        <div class="slider">
-            <img src="./img/logos2/k24.png" alt="">
-            <img src="./img/logos2/kameme tv.png" alt="">
-            <img src="./img/logos2/Kamemefm.png" alt="">
-            <img src="./img/logos2/mayian fm.png" alt="">
-            <img src="./img/logos2/mediamaxx digital.png" alt="">
-            <img src="./img/logos2/meru fm.png" alt="">
-            <img src="./img/logos2/milelefm.png" alt="">
-            <img src="./img/logos2/msenangu.png" alt="">
-            <img src="./img/logos2/pd.png" alt="">
-
+        <div class="slider lazy" id="" >
+            <a href="https://k24tv.co.ke" target="_blank" class=""><img src="./img/logos2/k24.png" alt=""></a>
+            <a href="https://kamemetv.co.ke" target="_blank" class=""><img src="./img/logos2/kameme tv.png" alt=""></a>
+            <a href="https://kamemefm.co.ke" target="_blank" class=""><img src="./img/logos2/Kamemefm.png" alt=""></a>
+            <a href="https://mayianfm.co.ke" target="_blank" class=""><img src="./img/logos2/mayian fm.png" alt=""></a>
+            <a href="#" target="_blank" class=""><img src="./img/logos2/mediamaxx digital.png" alt=""></a>
+            <a href="https://meru.co.ke" target="_blank" class=""><img src="./img/logos2/meru fm.png" alt=""></a>
+            <a href="https://milelefm.co.ke" target="_blank" class=""><img src="./img/logos2/milelefm.png" alt=""></a>
+            <a href="https://msenangu.co.ke" target="_blank" class=""><img src="./img/logos2/msenangu.png" alt=""></a>
+            <a href="https://pd.co.ke" target="_blank" class=""><img src="./img/logos2/pd.png" alt=""></a>
         </div>
     </div>
 </body>
 <script src="./js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="./js/jquery.bbslider.js"></script>
 <script src="./js/main.js"></script>
-
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script>
-    $('.slider-images').bbslider({
+    $('.slider-images-0').bbslider({
         auto:  true,
         timer: 3000,
           loop:  true
+      });
+</script>
+<script>
+    $('.carousel').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        dots: false,
+        infinite: true,
+        speed: 500,
+        arrows: false,
+        fade: true,
+        cssEase: 'linear'
+      });
+</script>
+<script>
+    $('.lazy').slick({
+        lazyLoad: 'ondemand',
+        slidesToShow: 5,
+        arrows: false,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
       });
 </script>
 <script>

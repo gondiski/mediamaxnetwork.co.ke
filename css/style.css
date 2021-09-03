@@ -23,7 +23,7 @@ main{
     grid-column: 1/4;
     background-image: linear-gradient(to right, #001123, #001123, #005390, #001123, #001123);
     /* background-image: linear-gradient(to right, blue, purple); */
-    height: auto;
+    min-height: auto;
 }
 /* header styling for the navigation and logo section  */
 .header{
@@ -92,7 +92,7 @@ main{
         background: white;
         cursor: pointer;
         box-shadow:  1px 1px 3px #666;
-        border: 1px solid #777;
+        border: 1px solid #000;
         border-radius: 5px;
     }
     
@@ -273,6 +273,36 @@ main{
 }
 .stats-slider{
     display: none;
+}
+.slider{
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+.slider img {
+    max-width: 100%;
+}
+.subs{
+    position: absolute;
+    max-width: 50%;
+    margin: 0 auto;
+    top: 2rem;
+    left: 5rem;
+}
+.subs img{
+    max-width: 100%;
+}
+.subs h1{
+    text-transform: uppercase;
+    color: red;
+}
+.subs p{
+    color: #fff;
+}
+.subs button{
+    background: yellow;
+    color: black;
+    border-radius: 30px;
 }
 .address{
     grid-column: 1/4;

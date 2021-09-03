@@ -60,13 +60,15 @@
             
         </div>
         <div class="jumbotron">
-            <div class="slider">
-                <div class="slider-images" style="height:500px;">
-                    <img src="./img/homepage_1_resized.png" alt="">
-                    <img src="./img/homepage_2_resized.png" alt="">
-                    <img src="./img/homepage_3_resized.png" alt="">
-                    <img src="./img/homepage_4_resized.png" alt="">
-                    <!-- <img src="" alt=""> -->
+            <div class="">
+                <div class="slider-images" id="intro" style="height:;">
+                    <div class="carousel">
+                        <img src="./img/homepage_1_resized.png" alt="" class="">
+                        <img src="./img/homepage_2_resized.png" alt="" class="">
+                        <img src="./img/homepage_3_resized.png" alt="" class="">
+                        <img src="./img/homepage_4_resized.png" alt="" class="">
+                    
+                    </div>
                 </div>
             </div>
         </div>
@@ -147,11 +149,11 @@
     </div>
     <div class="stats">
         <div class="stats-text">
-            <h2>35 Million</h2>
+            <h2>40 Million</h2>
             <p>radio listener per month</p>
         </div>
         <div class="stats-text">
-            <h2>40 million</h2>
+            <h2>35 million</h2>
             <p>Tv viewers per month</p>
         </div>
         <div class="stats-text">
@@ -225,15 +227,43 @@
 <script src="./js/jquery-3.2.1.min.js"></script>
 <script src="./js/jquery.bbslider.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="./js/main.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 
 <script>
-    $('.slider-images').bbslider({
+    $('.slider-images-0').bbslider({
         auto:  true,
         timer: 3000,
           loop:  true
       });
 </script>
+<script>
+    $('.carousel').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        dots: false,
+        infinite: true,
+        speed: 500,
+        arrows: false,
+        fade: true,
+        cssEase: 'linear'
+      });
+</script>
+<script>
+    $('.lazy').slick({
+        lazyLoad: 'ondemand',
+        slidesToShow: 5,
+        arrows: false,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+      });
+</script>
+
 <script>
     feather.replace();
 </script>
