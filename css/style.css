@@ -175,6 +175,9 @@ main{
 .title{
     font-family: "Antonio", sans-serif;
 }
+.slick-slide > img{
+    width: 100%;
+}
 .heading h1{
     padding: 5px 0;
     font-family: "Antonio", sans-serif;
