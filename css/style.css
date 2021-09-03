@@ -175,9 +175,6 @@ main{
 .title{
     font-family: "Antonio", sans-serif;
 }
-.slick-slide > img{
-    width: 100%;
-}
 .heading h1{
     padding: 5px 0;
     font-family: "Antonio", sans-serif;
@@ -284,6 +281,9 @@ main{
 .slider img {
     max-width: 100%;
 }
+.slick-slide > img{
+    width: 100%;
+}
 .subs{
     position: absolute;
     max-width: 50%;
@@ -298,7 +298,15 @@ main{
 }
 .subs h1{
     text-transform: uppercase;
+}
+.red{
     color: red;
+}
+.mustard{
+    color:#fcbb33;
+}
+.subs{
+    min-height: 50rem;
 }
 .subs p{
     color: #fff;
@@ -308,13 +316,15 @@ main{
     background: #FCBB33;
     color: black;
     border-radius: 30px;
+    margin-top: 2rem;
 }
-.subs span{
+.subs .link{
     background: #FCBB33;
     color: #000;
     border-radius: 30px;
     padding: 7.8px 8.5px;
     margin-top: 2rem;
+    display: inline-block;
 }
 .address{
     grid-column: 1/4;
