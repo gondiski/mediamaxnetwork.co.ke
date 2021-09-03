@@ -234,7 +234,7 @@ main{
 .text p{
     line-height: 16pt;
     padding-bottom: 0.3rem;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 .text h2{
     font-size: 1rem;
@@ -305,6 +305,14 @@ main{
 .mustard{
     color:#fcbb33;
 }
+.stripe{
+    border: 1px solid #fcbb33;
+    max-width: 30%;
+    margin: 10px 0;
+}
+.white{
+    color: white;
+}
 .subs{
     min-height: 50rem;
 }
@@ -316,14 +324,14 @@ main{
     background: #FCBB33;
     color: black;
     border-radius: 30px;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 .subs .link{
     background: #FCBB33;
     color: #000;
     border-radius: 30px;
     padding: 7.8px 8.5px;
-    margin-top: 2rem;
+    margin-top: 1rem;
     display: inline-block;
 }
 .address{
