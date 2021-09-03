@@ -153,28 +153,27 @@ main{
     
 }
 .slider-images{
-    min-height: auto;
+    min-height: 100%;
 }
 .brands{
     /* border:1px solid gold; */
     grid-column: 1/4;
     margin:0 auto;
     max-width: 60%;
+    /* padding: 0 5rem; */
 }
 .brands .slider{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-content: center;
     flex-wrap: wrap;
     margin: 5px 0;
 }
-.brands .slider > img{
-    max-width: 8%;
-    /* border: 1px solid #000; */
-    margin: 0 5px;
-}
 .heading{
     background:silver;
+}
+.title{
+    font-family: "Antonio", sans-serif;
 }
 .heading h1{
     padding: 5px 0;
@@ -288,8 +287,10 @@ main{
     margin: 0 auto;
     top: 2rem;
     left: 5rem;
+    padding-bottom: 2rem;
+    /* max-height: 100%; */
 }
-.subs img{
+.bundle > img{
     max-width: 100%;
 }
 .subs h1{
@@ -298,11 +299,19 @@ main{
 }
 .subs p{
     color: #fff;
+    font-size: 0.8rem;
 }
 .subs button{
-    background: yellow;
+    background: #FCBB33;
     color: black;
     border-radius: 30px;
+}
+.subs span{
+    background: #FCBB33;
+    color: #000;
+    border-radius: 30px;
+    padding: 7.8px 8.5px;
+    margin-top: 2rem;
 }
 .address{
     grid-column: 1/4;

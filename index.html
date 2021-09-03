@@ -51,11 +51,6 @@
                         <li><a class="menuLink" href="contact.html">Contact</a></li>
                       </ul>
                 </div>
-                <!-- <div class="search">
-                    <form action="">
-                        <input type="search" placeholder="Search">
-                    </form>
-                </div> -->
             </div>
             
         </div>
@@ -65,7 +60,7 @@
                     <div class="carousel">
                         <div class="bundle">
                             <div class="subs">
-                                <h1>Mediamax Network</h1>
+                                <h1 class="title"> Mediamax Network</h1>
                                 <p>Is the largest independent media house in East Africa with operations in print, broadcast and digital media.</p>
                                 <button>12 media brands</button>
                             </div>
@@ -73,17 +68,17 @@
                         </div>
                         <div class="bundle">
                             <div class="subs">
-                                <h1>People Daily</h1>
+                                <h1 class="title">People Daily</h1>
                                 
                                 <p>newspaper is Kenya's premier free mainstream newspaper. Despite having a strong presence online. People Daily also boasts of offering the value provision, since it is distributed freely to its target group who read 100,000 copies daily.</p>
-                                <button>100,000 Copies Daily</button>
+                                <span>100,000 Copies Daily</span>
                             </div>
                             <img src="./img/homepage_2_resized.png" alt="" class="">
                         </div>
                         <div class="bundle">
                             <div class="subs">
-                                <h1>We reach over</h1>
-                                <h1>20 Million</h1>
+                                <h1 class="title">We reach over</h1>
+                                <h1 class="title">20 Million</h1>
                                 <h3>Unique users per month</h3>
                                 <hr>
                                 <p>and deliver over 20 Million pageviews</p>
@@ -211,31 +206,7 @@
 <script src="./js/jquery.bbslider.js"></script>
 <script src="./js/main.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script>
-    $('.slider-images-re').bbslider({
-        auto:  true,
-        timer: 3000,
-          loop:  true
-      });
-</script>
-<!-- implemented a slider organically using jquery  -->
-<script>
-    /*var slideIndex = 0;
-    showSlides().fadeOut("slow");
 
-    function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mylides");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}
-    slides[slideIndex-1].style.display = "grid";
-    setTimeout(showSlides, 8000); // Change image every 2 seconds
-    }*/
-</script>
-<!-- end of slider code  -->
 <!-- another slider  -->
 <script>
     $('.carousel').slick({
@@ -259,6 +230,7 @@
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
+        
       });
 </script>
 <script>
