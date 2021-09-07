@@ -286,7 +286,7 @@ main{
 }
 .subs{
     position: absolute;
-    max-width: 50%;
+    max-width: 40%;
     margin: 0 auto;
     top: 2rem;
     left: 5rem;
