@@ -1,3 +1,9 @@
+// Loader for the page
+window.addEventListener("load", function(){
+  const loader = document.querySelector(".loader");
+  loader.className += " hidden";  
+})
+// hamburger menu 
 var menu = document.querySelector(".menu")
 var ham = document.querySelector(".ham")
 var xIcon = document.querySelector(".xIcon")
